@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваше Имя - Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Maksym Lesniak</h1>
+            <p style="display: none;">Junior Frontend Developer| Designer | Data specialist</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                Здесь вы можете рассказать о себе, своем опыте и увлечениях. 
+                Напишите о том, что вас мотивирует и какие цели вы перед собой ставите.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>My projects</h2>
+            <div class="project-card">
+                <h3>Weather cheaker</h3>
+                <p>Small training project with weather API created on JavaScript</p>
+                <a href="#">Посмотреть проект</a>
+            </div>
+            <div class="project-card">
+                <h3>Название проекта 2</h3>
+                <p>Краткое описание проекта. Расскажите о технологиях, которые вы использовали, и о вашей роли в проекте.</p>
+                <a href="#">Посмотреть проект</a>
+            </div>
+            <!-- Добавьте больше карточек проектов по необходимости -->
+        </section>
+
+        <section id="skills">
+            <h2>Мои навыки</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <!-- Добавьте другие навыки -->
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Massage:</label>
+                <textarea id="message" name="message" required></textarea><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Maksym .All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</html>

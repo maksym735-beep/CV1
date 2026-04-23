@@ -1,0 +1,206 @@
+body {
+    background-color:#1a1a2e;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: showIn 1s ease-out forwards;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Выравниваем навигацию по правому краю */
+}
+
+nav ul {
+    display: flex; /* Делаем список flex-контейнером */
+    flex-direction: row; /* Выстраиваем элементы списка в ряд */
+    list-style: none; /* Убираем стандартные точки у списка */
+    gap: 20px; /* Добавляем отступы между ссылками для красоты */
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul a {
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: bold;
+    gap: 20px;
+    
+    
+}
+
+
+.hero {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#about {
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    font-size: x-large;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем элементам переноситься на новую строку */
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    gap: 20px; /* Добавляем отступ между карточками */
+    justify-content: space-around;
+}
+
+#projects h2 {
+    text-align: center;
+    width: 100%; /* Заставляем заголовок занимать всю ширину */
+}
+
+.project-card {
+    width: 300px; /* Задаем ширину карточки */
+    aspect-ratio: 1 / 1; /* Заставляет карточку всегда быть строго квадратной */
+    background-color: #272744; /* Слегка осветленный темно-синий цвет для фона карточек */
+    padding: 24px; /* Внутренние отступы, чтобы текст не прилипал к краям */
+    border-radius: 12px; /* Немного скруглим углы для красоты */
+    box-sizing: border-box; /* Чтобы отступы (padding) не ломали размер квадрата */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Равномерно распределяем заголовок, текст и ссылку внутри */
+
+}
+
+.project-card:hover {
+    width: 300px; /* Задаем ширину карточки */
+    aspect-ratio: 1 / 1; /* Заставляет карточку всегда быть строго квадратной */
+    background-color: #272744; /* Слегка осветленный темно-синий цвет для фона карточек */
+    padding: 24px; /* Внутренние отступы, чтобы текст не прилипал к краям */
+    border-radius: 12px; /* Немного скруглим углы для красоты */
+    box-sizing: border-box; /* Чтобы отступы (padding) не ломали размер квадрата */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Равномерно распределяем заголовок, текст и ссылку внутри */
+    transform: translateY(-20px);
+    transition: 0.3s ease-in-out;
+}
+
+.project-card a {
+    color: #38bdf8; /* Приятный светло-голубой цвет */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold; /* Делаем шрифт немного жирнее */
+}
+
+#skills {
+    text-align: center; /* Центрируем заголовок секции */
+    margin-bottom: 80px; /* Отступ снизу до следующей секции */
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем тегам переноситься на новую строку, если не влезают */
+    justify-content: center; /* Центрируем все теги по горизонтали */
+    gap: 15px; /* Расстояние между тегами */
+    list-style: none; /* Убираем стандартные точки списка */
+    padding: 0;
+}
+
+#skills li {
+    background-color: #272744; /* Цвет фона как у карточек проектов */
+    color: #38bdf8; /* Голубой цвет текста */
+    padding: 10px 25px; /* Внутренние отступы для объема (сверху/снизу и по бокам) */
+    border-radius: 50px; /* Сильное скругление углов для формы "пилюли" */
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer; /* Обычный курсор-стрелочка */
+    transition: 0.3s ease; /* Плавность для анимации */
+    border: 1px solid #38bdf8; /* Тонкая рамка в цвет текста для выразительности */
+}
+
+#skills li:hover {
+    background-color: #38bdf8; /* При наведении заливаем голубым цветом */
+    color: #1a1a2e; /* А текст делаем цвета фона страницы (темным) */
+    transform: translateY(-5px); /* Слегка приподнимаем тег вверх */
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px; /* Отступ снизу перед футером */
+}
+
+#contact form {
+    background-color: #272744; /* Фон формы, как у карточек проектов */
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px; /* Ограничиваем максимальную ширину формы */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Расстояние между полями и текстом */
+    box-sizing: border-box;
+}
+
+#contact label {
+    color: #38bdf8; /* Голубой акцентный цвет */
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#contact input,
+#contact textarea {
+    background-color: #1a1a2e; /* Темный фон полей ввода */
+    color: white;
+    border: 1px solid #1a1a2e; /* Незаметная рамка в спокойном состоянии */
+    padding: 15px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease; /* Плавное изменение цвета рамки */
+    box-sizing: border-box;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none; /* Убираем стандартную обводку браузера */
+    border-color: #38bdf8; /* Голубая рамка при активации поля */
+}
+
+#contact textarea {
+    resize: vertical; /* Разрешаем пользователю растягивать поле только вниз */
+    min-height: 120px;
+}
+
+#contact button {
+    background-color: #38bdf8;
+    color: #1a1a2e;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 15px; /* Отделяем кнопку от полей чуть сильнее */
+}
+
+#contact button:hover {
+    background-color: white; /* При наведении кнопка становится белой */
+    transform: translateY(-3px); /* Слегка приподнимается */
+}
+
+#contact br {
+    display: none; /* Скрываем теги <br>, так как за отступы теперь отвечает flexbox */
+}
+
+@keyframes showIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    
+
+}}
