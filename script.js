@@ -12,24 +12,24 @@ contactForm.addEventListener('submit', (e) => {
 });
 
 const paragraph = document.querySelector('.hero p');
-const text = paragraph.textContent; // 1. Сохраняем весь текст ("Junior Frontend...") в переменную
+const text = paragraph.textContent; 
 
-paragraph.textContent = ''; // 2. Очищаем абзац, чтобы он стал пустым
-paragraph.style.display = 'block'; // 3. Делаем его видимым (ты скрыл его в HTML, теперь возвращаем)
+paragraph.textContent = ''; 
+paragraph.style.display = 'block'; 
 
-let i = 0; // 4. Создаем счетчик букв, начинаем с нулевой (первой) буквы
+let i = 0;
 
 const timer = setInterval(() => {
     if (i < text.length) {
-        paragraph.textContent += text.charAt(i); // 5. Берем букву под номером 'i' и добавляем в абзац
-        i++; // 6. Увеличиваем счетчик на 1 для следующего шага
+        paragraph.textContent += text.charAt(i); 
+        i++; 
     } else {
-        clearInterval(timer); // 7. Если буквы закончились, останавливаем таймер
+        clearInterval(timer); 
     }
-}, 100); // 8. Таймер срабатывает каждые 100 миллисекунд
+}, 100); 
 
 const title = document.querySelector('.hero h1');
-title.style.cursor = 'pointer'; // Делаем курсор в виде "руки", чтобы показать кликабельность
+title.style.cursor = 'pointer'; 
 title.addEventListener('click', () => {
     title.style.color = '#38bdf8';
 });
